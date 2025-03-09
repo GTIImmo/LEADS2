@@ -1,0 +1,127 @@
+/* 🌟 Général */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F4F4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 Bandeau du logo avec fond anthracite */
+.header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 📋 Conteneur principal */
+.container {
+    max-width: 700px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 📋 Titre principal */
+h1 {
+    font-size: 24px;
+    color: #F77F00;
+    text-align: center;
+}
+
+/* 📋 Infos du lead en 2 colonnes */
+.lead-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+/* 📋 Chaque info avec icône */
+.lead-info p {
+    font-size: 16px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    transition: background 0.3s ease-in-out;
+}
+
+.lead-info p:hover {
+    background-color: #f9f9f9;
+}
+
+/* 📅 Boîte de dialogue Planifier Relance */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+/* 🎨 Boutons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* 📅 Bouton "Planifier une relance" */
+.btn-primary {
+    background-color: #F77F00;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #D96400;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 600px) {
+    .lead-info {
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        width: 100%;
+    }
+}
